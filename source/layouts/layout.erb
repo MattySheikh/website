@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="/images/favicon.ico">
+	<!-- Use title if it's in the page YAML frontmatter -->
+	<title><%= current_page.data.title || "Matthew Al-Sheikh" %></title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<%= stylesheet_link_tag "normalize", "main" %>
+	<%= javascript_include_tag "main" %>
+	<%= yield_content :assets %>
+</head>
+<body class="<%= page_classes %>">
+	<div id="main-bar">
+		<a href="/">
+			<div class="bar-name">
+				Matthew Al-Sheikh
+			</div>
+		</a>
+		<div id="links-holder">
+			<div class="bar-item">
+				<a href="https://github.com/MattySheikh" target="_blank">
+					<div class="bar-link">
+						GitHub
+					</div>
+				</a>
+			</div>
+			<a href="/images/MatthewAlSheikhResume.pdf">
+				<div class="bar-link">
+					Resum&eacute;
+				</div>
+			</a>
+			<a href="/research">
+				<div class="bar-link">
+					Research
+				</div>
+			</a>
+			<a href="/projects">
+				<div class="bar-link">
+					Projects
+				</div>
+			</a>
+		</div>
+		<div id="bottom-contact">
+			<div class="contact">Contact</div>
+			<div class="contact-icon">
+				<a href="https://twitter.com/MattySheikh" target="_blank">
+					<img src="/images/twitter.png" class="contact-img" />
+				</a>
+			</div>
+			<div class="contact-icon">
+				<a href="mailto:matthewalsheikh@gmail.com" target="_blank">
+					<img src="/images/mail.png" class="contact-img" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<%= yield %>
+	</div>
+</body>
+</html>

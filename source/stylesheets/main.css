@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body, html{
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
+	color: #050402;
+}
+#main-bar{
+	width: 13%;
+	background: rgba(0, 155, 76, .9);
+	height: 100%;
+	opacity: .8;
+	float: left;
+	-webkit-font-smoothing: antialiased;
+	position:fixed;
+}
+
+#content{
+	width: 87%;
+	background-color: #36D986;
+	min-height: 100%;
+	float: right;
+}
+
+.bar-name{
+	text-align: center;
+	padding: 5px;
+	color: white;
+	word-break: break-word;
+	background-color: rgba(255, 255, 255, 0.1);
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:-webkit-any-link{
+	color: inherit;
+}
+
+#links-holder{
+	width: 100%;
+	text-align: center;
+	line-height:22px;
+}
+
+.bar-link{
+	font-size: 20px;
+	padding: 10px;
+	transition: .3s;
+}
+
+.bar-link:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#bottom-contact{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	vertical-align: text-bottom;
+}
+
+.contact-img{
+	height: 30px;
+}
+
+.contact{
+	cursor: default;
+	font-size: 18px;
+}
+
+.contact-icon{
+	display: inline-block;
+	padding: 5px;
+}
+
+.light{
+	color: #050402;
+}
+
+.dark{
+	color: white;
+}
