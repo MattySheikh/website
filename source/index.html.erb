@@ -1,5 +1,6 @@
 <% content_for :assets do %>
 <%= stylesheet_link_tag 'home' %>
+<%= javascript_include_tag 'home' %>
 <% end %>
 
 <div id="home-content">
@@ -26,9 +27,6 @@
 	</div>
 	<div class="home-section dark" style="background-color:#57cd79">
 		<div class="section-container">
-			<div class="home-img-block img-right">
-				<img src="/images/code_icon.png" class="home-img" />
-			</div>
 			<div class="question-container">
 				<div class="home-question">What I Can Do</div>
 				<div class="home-answer">
@@ -42,6 +40,9 @@
 						I'm also learning how to develop in Ruby and Rails. Both are extremely exciting technologies that I can't wait to master.
 					</p>
 				</div>
+			</div>
+			<div class="home-img-block img-right">
+				<img src="/images/code_icon.png" class="home-img" />
 			</div>
 		</div>
 	</div>
