@@ -4,8 +4,7 @@
 }
 
 .home-img-block{
-	display: table-cell;
-	vertical-align: middle;
+	display: inline-block;
 }
 
 #mugshot{
@@ -14,9 +13,14 @@
 }
 
 .home-section{
-	padding: 15px;
-	min-height: 270px;
+	padding: 20px;
 	margin-left: -1px;
+	width: 550px;
+	display: inline-block;
+	min-height: 760px;
+	vertical-align: middle;
+	margin: 20px;
+	min-width: 27%;
 }
 
 .home-question{
@@ -34,8 +38,7 @@
 }
 
 .question-container{
-	display: table-cell;;
-	vertical-align: top;
+	display: inline-block;
 }
 
 p {
@@ -50,4 +53,12 @@ p {
 
 .img-right{
 	padding-left: 15px;
+}
+
+.section-container{
+	text-align: center;
+}
+
+#home-content{
+	text-align: center;
 }

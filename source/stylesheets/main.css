@@ -5,11 +5,11 @@ body, html{
 	margin: 0px;
 	padding: 0px;
 	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
-	color: #050402;
+	color: white;
 }
 #main-bar{
 	width: 13%;
-	background: rgba(0, 155, 76, .9);
+	background: #3b4450;
 	height: 100%;
 	opacity: .8;
 	float: left;
@@ -19,7 +19,7 @@ body, html{
 
 #content{
 	width: 87%;
-	background-color: #36D986;
+	background-color: #3b4450;
 	min-height: 100%;
 	float: right;
 }
@@ -27,9 +27,9 @@ body, html{
 .bar-name{
 	text-align: center;
 	padding: 5px;
-	color: white;
+	color: #fa1e64;
 	word-break: break-word;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: #232929;
 	font-size: 18px;
 }
 
@@ -80,7 +80,7 @@ a:-webkit-any-link{
 }
 
 .light{
-	color: #050402;
+	color: #232929;
 }
 
 .dark{
