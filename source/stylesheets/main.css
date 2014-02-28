@@ -9,9 +9,8 @@ body, html{
 }
 #main-bar{
 	width: 13%;
-	background: #3b4450;
+	background: #6B9682;
 	height: 100%;
-	opacity: .8;
 	float: left;
 	-webkit-font-smoothing: antialiased;
 	position:fixed;
@@ -19,7 +18,7 @@ body, html{
 
 #content{
 	width: 87%;
-	background-color: #3b4450;
+	background-color: #464646;
 	min-height: 100%;
 	float: right;
 }
@@ -27,9 +26,9 @@ body, html{
 .bar-name{
 	text-align: center;
 	padding: 5px;
-	color: #fa1e64;
+	color: #FFFAD6;
 	word-break: break-word;
-	background-color: #232929;
+	background-color: #93B17B;
 	font-size: 18px;
 }
 
@@ -84,5 +83,5 @@ a:-webkit-any-link{
 }
 
 .dark{
-	color: white;
+	color: #232323;
 }

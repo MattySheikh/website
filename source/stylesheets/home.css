@@ -1,6 +1,7 @@
 .home-img{
 	border-radius: 50%;
 	height: 250px;
+	margin-top: 25px;
 }
 
 .home-img-block{
@@ -17,7 +18,6 @@
 	margin-left: -1px;
 	width: 550px;
 	display: inline-block;
-	min-height: 760px;
 	vertical-align: middle;
 	margin: 20px;
 	min-width: 27%;
@@ -29,7 +29,7 @@
 }
 
 .home-answer{
-	font-size: 25px;
+	font-size: 20px;
 	margin-left: 15px;
 	display: block;
 	background: rgba(255, 255, 255, 0.1);
