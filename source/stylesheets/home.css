@@ -62,3 +62,12 @@ p {
 #home-content{
 	text-align: center;
 }
+
+@media (max-width: 680px) {
+	.home-section{
+		padding: 0;
+		margin: 0;
+		width: 94%;
+		margin-bottom: 20px;
+	}
+}
