@@ -6,6 +6,7 @@ body, html{
 	padding: 0px;
 	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
 	color: white;
+	background-color: #464646;
 }
 #main-bar{
 	width: 13%;
@@ -18,7 +19,6 @@ body, html{
 
 #content{
 	width: 87%;
-	background-color: #464646;
 	min-height: 100%;
 	float: right;
 }
@@ -100,7 +100,7 @@ a:-webkit-any-link{
 	cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
 	.bar-name{
 		border-bottom: 1px solid black
 	}
@@ -141,7 +141,7 @@ a:-webkit-any-link{
 	}
 }
 
-@media (max-height: 275px) {
+@media (max-height: 320px) {
 	#bottom-contact {
 		position: relative;
 	}
