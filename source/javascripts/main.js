@@ -2,7 +2,7 @@ $w = $(window);
 $d = $(document);
 
 (function (window, document, $window, $document) {
-if (window.$) {
+	if (window.$) {
 		// jQuery quickEach, like each but gives jQueryified element
 		if ($.fn.quickEach === undefined) {
 			$.fn.quickEach = (function () {
@@ -37,4 +37,9 @@ if (window.$) {
 			return this;
 		};
 	}
+
+	$d
+		.on('click', '#display-subbar', function() {
+			$('#subbar').toggle();
+		})
 })(this, document, $w, $d);

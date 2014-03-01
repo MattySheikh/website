@@ -1,3 +1,2 @@
 (function() {
-	var init = function() {}
 })();
