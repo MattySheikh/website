@@ -140,3 +140,9 @@ a:-webkit-any-link{
 		display: block !important;
 	}
 }
+
+@media (max-height: 275px) {
+	#bottom-contact {
+		position: relative;
+	}
+}
