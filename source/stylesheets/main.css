@@ -179,6 +179,12 @@ a:-webkit-any-link{
 	text-align: center;
 }
 
+.about-me .about-me-menu,
+.projects .projects-menu,
+.experiments .experiments-menu {
+	background-color: rgba(252, 252, 252, 1);
+}
+
 
 @media (max-width: 625px) {
 	#page{
@@ -194,5 +200,9 @@ a:-webkit-any-link{
 
 	#bottom-contact{
 		display: block;
+	}
+
+	.menu-item{
+		width: 120px;
 	}
 }

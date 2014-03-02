@@ -1,3 +1,8 @@
+---
+title: My Experiments
+page_classes: non-index
+---
+
 <% content_for :assets do %>
 <%= stylesheet_link_tag 'home' %>
 <%= javascript_include_tag 'home' %>
@@ -9,7 +14,7 @@
 			<div class="home-question">Who I Am</div>
 			<div class="img-answer">
 				<div class="home-img-block">
-					<img src="/images/mugshot.png" class="home-img" />
+					<%= image_tag "mugshot.png", :class => "home-img" %>
 				</div>
 				<div class="home-answer">
 					<p>
@@ -30,7 +35,7 @@
 			<div class="home-question">What I Can Do</div>
 			<div class="img-answer">
 				<div class="home-img-block">
-					<img src="/images/code_icon.png" class="home-img" />
+					<%= image_tag "code_icon.png", :class => "home-img" %>
 				</div>
 				<div class="home-answer">
 					<p>
@@ -51,7 +56,7 @@
 			<div class="home-question">What I Enjoy Doing</div>
 			<div class="img-answer">
 				<div class="home-img-block">
-					<img src="/images/disneyland.png" class="home-img" />
+					<%= image_tag "disneyland.png", :class => "home-img" %>
 				</div>
 				<div class="home-answer">
 					<p>
