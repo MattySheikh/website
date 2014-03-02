@@ -1,35 +1,55 @@
 @charset "utf-8";
 
 body, html{
-	height:100%;
 	margin: 0px;
 	padding: 0px;
 	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
-	color: white;
-	background-color: #464646;
+	color: #FDFDFD;
+	background-color: #ececec;
 }
+
 #main-bar{
-	width: 13%;
-	background: #6B9682;
-	height: 100%;
-	float: left;
 	-webkit-font-smoothing: antialiased;
-	position:fixed;
 }
 
-#content{
-	width: 87%;
-	min-height: 100%;
-	float: right;
+#page{
+	width: 990px;
+	margin: 20px auto;
+	padding: 20px;
+	background-position: 15px;
+	background-image: -webkit-linear-gradient(left,
+		rgba(236,236,236,.8) 0%,
+		rgba(236,236,236,0) 20%,
+		rgba(236,236,236,0) 80%,
+		rgba(236,236,236,.8) 100%
+		),
+	url('/images/hoffman.png');
 }
-
 .bar-name{
 	text-align: center;
 	padding: 5px;
 	color: black;
 	word-break: break-word;
-	background-color: #93B17B;
-	font-size: 18px;
+	font: 38px/1.4 'Bubbler One',Helvetica,Arial,sans-serif;;
+	text-transform: uppercase;
+	color: #ba1820;
+	font-weight: bold;
+}
+
+.bar-title{
+	color: #999;
+	font-style: italic;
+	transition: .3s;
+}
+
+.bar-link{
+	text-transform: uppercase;
+	color: black;
+}
+
+.bar-img img{
+	max-height: 75px;
+	padding-top: 5px;
 }
 
 a {
@@ -41,26 +61,15 @@ a:-webkit-any-link{
 }
 
 #links-holder{
-	width: 100%;
 	text-align: center;
 	line-height:22px;
 }
 
-.bar-link{
-	font-size: 20px;
-	padding: 10px;
-	transition: .3s;
-}
-
-.bar-link:hover{
-	background-color: rgba(0, 0, 0, 0.1);
-}
 
 #bottom-contact{
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	width: 100%;
 	vertical-align: text-bottom;
 }
 
@@ -79,7 +88,46 @@ a:-webkit-any-link{
 }
 
 .dark{
-	color: #0e0808;
+	color: #4F4D4E;
+}
+
+.menu-item{
+	display: inline-block;
+	padding: 15px;
+	height: 120px;
+	width: 200px;
+	background-color: rgba(252, 252, 252, 0.7);
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	color: #150000;
+	transition: .3s;
+	-webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	-moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+	margin: 0 10px 0 0;
+}
+
+.menu-item.last{
+	margin: 0;
+}
+
+.menu-item:hover{
+	background-color: rgba(252, 252, 252, 1);
+}
+
+.menu-item:hover .bar-title{
+	color: #ba1820;
+}
+
+#subbar{
+	margin: 10px 0 10px 0;
+	border-top: 1px solid #525252;
+	border-bottom: 1px solid #525252;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	width: 100%;
+	-webkit-padding-start: 0px;
 }
 
 #display-subbar{
@@ -100,43 +148,3 @@ a:-webkit-any-link{
 	cursor: pointer;
 }
 
-@media (max-width: 860px) {
-	.bar-name{
-		border-bottom: 1px solid black
-	}
-	#main-bar{
-		width: 100%;
-		height: auto;
-	}
-
-	#subbar{
-		display: none;
-	}
-
-	#display-subbar{
-		display: block;
-	}
-
-	#content{
-		padding-top: 35px;
-		width: 100%;
-	}
-
-	#bottom-contact{
-		position: relative;
-	}
-
-	.contact {
-		display: none;
-	}
-
-	.bar-item{
-		display: inline-block;
-	}
-}
-
-@media (max-height: 320px) {
-	#bottom-contact {
-		position: relative;
-	}
-}

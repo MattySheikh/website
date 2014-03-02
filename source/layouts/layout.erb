@@ -12,6 +12,8 @@
 	<meta charset="utf-8">
 
 	<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
+
 	<link rel="icon" href="/images/favicon2.ico">
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -22,75 +24,101 @@
 	<%= yield_content :assets %>
 </head>
 <body class="<%= page_classes %>">
-	<div id="main-bar">
-		<div id="name-holder">
-			<a href="/">
-				<div class="bar-name">
-					Matthew Al-Sheikh
+	<div id="page">
+		<div id="page-inner">
+			<div id="main-bar">
+				<div id="name-holder">
+					<div class="bar-name">
+						<a href="/" style="padding: 10px;">
+							Matthew Al-Sheikh
+						</a>
+					</div>
+					<div id="display-subbar"></div>
 				</div>
-			</a>
-			<div id="display-subbar"></div>
-		</div>
-		<div id="subbar">
-			<div id="links-holder">
-				<div class="bar-item">
-					<a href="https://github.com/MattySheikh" target="_blank">
-						<div class="bar-link">
-							GitHub
-						</div>
+				<ul id="subbar">
+					<a href="/about-me">
+						<li class="menu-item">
+							<div class="sub-menu-item">
+								<div class="bar-title">
+									Who are you?
+								</div>
+								<div class="bar-link">
+									About Me
+									<div class="bar-img">
+										<img src="/images/beard.svg" />
+									</div>
+								</div>
+							</div>
+						</li>
 					</a>
-				</div>
-				<div class="bar-item">
-					<a href="/images/MatthewAlSheikhRxesume.pdf">
-						<div class="bar-link">
-							Resum&eacute;
-						</div>
-					</a>
-				</div>
-				<div class="bar-item">
-					<a href="/research">
-						<div class="bar-link">
-							Research
-						</div>
-					</a>
-				</div>
-				<div class="bar-item">
 					<a href="/projects">
-						<div class="bar-link">
-							Projects
-						</div>
+						<li class="menu-item">
+							<div class="bar-title">
+								Work outside work
+							</div>
+							<div class="bar-link">
+								Projects
+								<div class="bar-img">
+									<img src="/images/project.svg" />
+								</div>
+							</div>
+						</li>
 					</a>
-				</div>
-				<div class="bar-item">
 					<a href="/experiments">
-						<div class="bar-link">
-							Experiments
-						</div>
+						<li class="menu-item">
+							<div class="bar-title">
+								Weird stuff
+							</div>
+							<div class="bar-link">
+								Experiments
+								<div class="bar-img">
+									<img src="/images/experiment.svg" />
+								</div>
+							</div>
+						</li>
 					</a>
+					<a href="https://github.com/MattySheikh" target="_blank">
+						<li class="menu-item last">
+							<div class="bar-title">
+								Let me see your code
+							</div>
+							<div class="bar-link">
+								GitHub
+								<div class="bar-img">
+									<img src="/images/code.svg" />
+								</div>
+							</div>
+						</li>
+					</a>
+				</ul>
+				<div id="bottom-contact">
+					<div class="contact">Contact</div>
+					<div class="contact-icon">
+						<a href="/images/MatthewAlSheikhResume.pdf" target="_blank">
+							<img src="/images/resume.svg" class="contact-img" title="Resum&eacute;" />
+						</a>
+					</div>
+					<div class="contact-icon">
+						<a href="http://www.linkedin.com/pub/matthew-al-sheikh/42/64/651" target="_blank">
+							<img src="/images/linkedin.svg" class="contact-img" title="LinkedIn" />
+						</a>
+					</div>
+					<div class="contact-icon">
+						<a href="mailto:matthewalsheikh@gmail.com" target="_blank">
+							<img src="/images/mail.png" class="contact-img" title="Email" />
+						</a>
+					</div>
+					<div class="contact-icon">
+						<a href="https://twitter.com/MattySheikh" target="_blank">
+							<img src="/images/twitter.png" class="contact-img" title="Twitter" />
+						</a>
+					</div>
 				</div>
 			</div>
-			<div id="bottom-contact">
-				<div class="contact">Contact</div>
-				<div class="contact-icon">
-					<a href="https://twitter.com/MattySheikh" target="_blank">
-						<img src="/images/twitter.png" class="contact-img" />
-					</a>
-				</div>
-				<div class="contact-icon">
-					<a href="mailto:matthewalsheikh@gmail.com" target="_blank">
-						<img src="/images/mail.png" class="contact-img" />
-					</a>
-				</div>
-				<div class="contact-icon">
-					<a href="http://www.linkedin.com/pub/matthew-al-sheikh/42/64/651" target="_blank">
-						<img src="/images/linkedin.svg" class="contact-img" />
-					</a>
-				</div>
+			<div id="content">
+				<%= yield %>
 			</div>
 		</div>
-	</div>
-	<div id="content">
-		<%= yield %>
 	</div>
 </body>
 </html>
