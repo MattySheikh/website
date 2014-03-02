@@ -13,7 +13,7 @@ body, html{
 }
 
 #page{
-	width: 990px;
+	width: 80%;
 	margin: 20px auto;
 	padding: 20px;
 	background-position: 15px;
@@ -105,7 +105,6 @@ a:-webkit-any-link{
 	-webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 	-moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
-	margin: 0 10px 0 0;
 }
 
 .menu-item.last{
@@ -130,6 +129,11 @@ a:-webkit-any-link{
 	-webkit-padding-start: 0px;
 }
 
+.subbar-menu{
+	display: inline-block;
+	margin: 5px;
+}
+
 #display-subbar{
 	display: none;
 	background: url('/images/more-menu.svg') no-repeat center;
@@ -147,4 +151,3 @@ a:-webkit-any-link{
 #display-subbar:hover{
 	cursor: pointer;
 }
-

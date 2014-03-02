@@ -39,7 +39,7 @@ $d = $(document);
 	}
 
 	window.onresize = function(e) {
-		$('#subbar').showIf(window.outerWidth > 860);
+		// $('#subbar').showIf(window.outerWidth > 860);
 	}
 
 	$d
