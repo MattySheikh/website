@@ -83,13 +83,6 @@ a:-webkit-any-link{
 }
 
 
-#bottom-contact{
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-	vertical-align: text-bottom;
-}
-
 .contact-img{
 	height: 30px;
 }
@@ -173,4 +166,33 @@ a:-webkit-any-link{
 	float: right;
 	margin: -8px 0;
 	height: 0;
+}
+
+.contact{
+	color: #ba1820;
+	font: 16px/2em 'Bubbler One', Helvetica;
+	font-weight: bold;
+}
+
+#bottom-contact{
+	display: none;
+	text-align: center;
+}
+
+
+@media (max-width: 625px) {
+	#page{
+		padding: 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 455px) {
+	#side-contact{
+		display: none;
+	}
+
+	#bottom-contact{
+		display: block;
+	}
 }
