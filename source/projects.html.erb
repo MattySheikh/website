@@ -6,5 +6,30 @@ bodyClass: nonindex
 <%= stylesheet_link_tag 'projects' %>
 <% end %>
 <div id="projects-list">
-	Projects
+	<div id="projects-title">
+		Side Projects
+	</div>
+	<div id="projects-container">
+		<div class="project-item">
+			<div class="item-title">
+				The 2nd Greatest Running Back of All Time
+			</div>
+			<div class="item-explanation">
+				The beginnings of the LaDainian Tomlinson Research Project (LTRP). The LTRP will prove
+				that LaDainian Tomlinson is the greatest running back to ever play the game of football.
+				The initial findings can be
+				<%= link_to "seen here &rarr;", "https://docs.google.com/document/d/1RjrDj-4K2ovmveHRfNjTgwXAu4lGIuZ4ZLICBzvSUEU/edit?usp=sharing", :target => "_blank", :style => "color: #ba1820" %>
+			</div>
+		</div>
+		<div class="project-item">
+			<div class="item-title">
+				Why Tony Gwynn is the Greatest Hitter Ever
+			</div>
+			<div class="item-explanation">
+				Ted Williams. Pete Rose. Anthony Keith Gwynn. Three of the greatest hitters of all time. But Tony Gwynn was the best of them.
+				Not only did he play against superior competition, but he did so while electrifying the city of San Diego. The Greatest Hitter Project
+				will focus on why Tony Gwynn can be argued as the greatest hitter the sport of baseball has ever seen.
+			</div>
+		</div>
+	</div>
 </div>

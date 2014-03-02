@@ -1,2 +1,31 @@
-body {
+#projects-list{
+	text-align: center;
 }
+
+#projects-title{
+	color: #ba1820;
+	font: 45px/2em 'Bubbler One', Helvetica;
+	font-weight: bold;
+}
+
+#projects-container{
+	text-align: left;
+	margin: 0 0 0 15px;
+	width: 65%;
+	margin: 0 auto;
+	background-color: rgba(252, 252, 252, 0.5);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.item-title{
+	color: #4F4D4E;
+	font-size: 25px;
+}
+
+.item-explanation{
+	color: black;
+	padding: 10px;
+	padding: 0 0 10px 10px;
+}
+
