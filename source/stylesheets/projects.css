@@ -29,3 +29,10 @@
 	padding: 0 0 10px 10px;
 }
 
+@media (max-width: 455px) {
+	#projects-container{
+		margin-left: 0;
+		padding: 7px;
+		width: 100%;
+	}
+}
