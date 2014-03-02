@@ -23,7 +23,7 @@
 	<%= javascript_include_tag "main" %>
 	<%= yield_content :assets %>
 </head>
-<body class="<%= page_classes %>">
+<body class="<%= page_classes + " " + (current_page.data.bodyClass || "") %>">
 	<div id="page">
 		<div id="page-inner">
 			<div id="main-bar">

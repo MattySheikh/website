@@ -185,6 +185,19 @@ a:-webkit-any-link{
 	background-color: rgba(252, 252, 252, 1);
 }
 
+.nonindex .menu-item{
+	height: 80px;
+	padding: 5px;
+}
+
+.nonindex .bar-img img {
+	max-height: 50px;
+}
+
+.nonindex .bar-title{
+	display: none;
+}
+
 
 @media (max-width: 625px) {
 	#page{
@@ -204,5 +217,17 @@ a:-webkit-any-link{
 
 	.menu-item{
 		width: 120px;
+	}
+	.nonindex .menu-item{
+		height: 50px;
+		padding: 5px;
+	}
+
+	.nonindex .bar-img img {
+		max-height: 25px;
+	}
+
+	.nonindex .bar-title{
+		display: none;
 	}
 }
