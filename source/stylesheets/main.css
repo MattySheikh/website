@@ -25,15 +25,32 @@ body, html{
 		),
 	url('/images/hoffman.png');
 }
-.bar-name{
-	text-align: center;
-	padding: 5px;
-	color: black;
+#bar-name{
 	word-break: break-word;
 	font: 38px/1.4 'Bubbler One',Helvetica,Arial,sans-serif;;
 	text-transform: uppercase;
 	color: #ba1820;
 	font-weight: bold;
+	margin-bottom: -5px;
+}
+
+#bar-subtitle{
+	color: black;
+}
+
+#name-holder{
+	width: 100%;
+}
+
+#name-container{
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+	width: 350px;
+}
+
+#name-container:hover #bar-name, #bar-name:hover{
+	color:black;
 }
 
 .bar-title{
@@ -121,8 +138,8 @@ a:-webkit-any-link{
 
 #subbar{
 	margin: 10px 0 10px 0;
-	border-top: 1px solid #525252;
-	border-bottom: 1px solid #525252;
+	border-top: double #c0c0c0;
+	border-bottom: double #c0c0c0;
 	padding: 10px 0 10px 0;
 	text-align: center;
 	width: 100%;
@@ -150,4 +167,10 @@ a:-webkit-any-link{
 
 #display-subbar:hover{
 	cursor: pointer;
+}
+
+#side-contact{
+	float: right;
+	margin: -8px 0;
+	height: 0;
 }
