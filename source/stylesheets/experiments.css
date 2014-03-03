@@ -7,6 +7,8 @@
 	transition: 1s;
 	display: table;
 	cursor: pointer;
+	position: absolute;
+	left: 10%;
 }
 
 #rolling-ball:active{
@@ -15,10 +17,15 @@
 	-o-transform:rotate(720deg);
 	-ms-transform:rotate(720deg);
 	transform:rotate(720deg);
-	margin-left: 600px;
+	left: 50%;
 }
 
 .ball-text{
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.expirement-title{
+	color: #4F4D4E;
+	font-size: 25px;
 }
