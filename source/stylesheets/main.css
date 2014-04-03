@@ -8,6 +8,10 @@ body, html{
 	background-color: #ececec;
 }
 
+#content{
+	text-align: center;
+}
+
 #main-bar{
 	-webkit-font-smoothing: antialiased;
 }
@@ -200,6 +204,25 @@ a:-webkit-any-link{
 	display: none;
 }
 
+.section-title{
+	color: #ba1820;
+	font: 45px/2em 'Bubbler One', Helvetica;
+	font-weight: bold;
+	display: block;
+}
+
+.item-title{
+	color: #4F4D4E;
+	font-size: 25px;
+}
+
+
+.item-explanation{
+	color: black;
+	padding: 10px;
+	padding: 0 0 10px 10px;
+	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
+}
 
 @media (max-width: 625px) {
 	#page{

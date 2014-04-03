@@ -22,13 +22,6 @@
 	background-color: rgba(252, 252, 252, 0.7);
 }
 
-.home-question{
-	color: #ba1820;
-	font: 45px/2em 'Bubbler One', Helvetica;
-	font-weight: bold;
-	display: block;
-}
-
 .home-answer{
 	font-size: 20px;
 	margin-left: 15px;
@@ -58,10 +51,6 @@ p {
 
 .img-right{
 	padding-left: 15px;
-}
-
-#home-content{
-	text-align: center;
 }
 
 @media (max-width: 455px) {

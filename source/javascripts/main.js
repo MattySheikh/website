@@ -38,6 +38,8 @@ $d = $(document);
 		};
 	}
 
+	console.log('here');
+
 	window.onresize = function(e) {
 		// $('#subbar').showIf(window.outerWidth > 860);
 	}
