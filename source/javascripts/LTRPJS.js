@@ -18,5 +18,3 @@ $('#div_rushing_and_receiving').find('tbody').find('[id*='+year+'] td').each(fun
 	}
 	count++;
 })
-
-console.log(data.join('\t'));
