@@ -7,7 +7,6 @@ bodyClass: nonindex
 <%= stylesheet_link_tag 'home' %>
 <%= javascript_include_tag 'home' %>
 <% end %>
-
 <div id="home-content">
 	<div class="home-section dark">
 		<div class="section-container">
@@ -18,7 +17,7 @@ bodyClass: nonindex
 				</div>
 				<div class="home-answer">
 					<p>
-						My name is Matthew Al-Sheikh. I'm 24 years old, currently residing in the beautiful town of Santa Barbara, California.
+						My name is Matthew Al-Sheikh. I'm <%= Date.today.year - "04/12/1990".to_date.year %> years old, currently residing in the beautiful town of Santa Barbara, California.
 					</p>
 					<p>
 						I attended school at the University of California at Santa Barbara with a degree in Computer Science. I also emphasized in Computation Economics.
