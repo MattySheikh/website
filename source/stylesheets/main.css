@@ -54,7 +54,7 @@ body, html{
 }
 
 #name-container:hover #bar-name, #bar-name:hover{
-	color:black;
+	color: black;
 }
 
 .bar-title{
