@@ -4,6 +4,7 @@ bodyClass: nonindex
 ---
 <% content_for :assets do %>
 <%= stylesheet_link_tag 'experiments' %>
+<%= javascript_include_tag 'experiments' %>
 <% end %>
 
 <div id= "experiments-content">
@@ -11,6 +12,13 @@ bodyClass: nonindex
 		Trying Stuff
 		<div class="item-explanation">
 			Disclaimer: You are not allowed to judge what I do here as it is probably terrible, unconvential, and makes no sense.
+		</div>
+	</div>
+	<div class="experiment">
+		<div class="experiment-title">Let's talk about</div>
+		<div class="center-experiment">
+			<%= image_tag "kenrik.jpg", :class => "image-sound-click", "data-sound" => "drone" %>
+			<%= image_tag "taylor.jpg", :class => "image-sound-click", "data-sound" => "angular" %>
 		</div>
 	</div>
 	<div class="experiment" style="height: 110px">

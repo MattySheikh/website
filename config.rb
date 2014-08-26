@@ -51,6 +51,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :sound_dir, 'sounds'
+
 activate :directory_indexes
 
 # Build-specific configuration

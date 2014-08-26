@@ -32,3 +32,12 @@
 	color: #4F4D4E;
 	font-size: 25px;
 }
+
+.image-sound-click {
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.center-experiment {
+	text-align: center;
+}
