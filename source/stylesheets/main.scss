@@ -2,7 +2,7 @@
 
 @import 'variables';
 
-body, html{
+body, html {
 	margin: 0px;
 	padding: 0px;
 	font: 13px/1.4 'Gafata',Helvetica,Arial,sans-serif;
@@ -10,15 +10,15 @@ body, html{
 	background-color: #ececec;
 }
 
-#content{
+#content {
 	text-align: center;
 }
 
-#main-bar{
+#main-bar {
 	-webkit-font-smoothing: antialiased;
 }
 
-#page{
+#page {
 	width: 80%;
 	margin: 20px auto;
 	padding: 20px;
@@ -31,7 +31,7 @@ body, html{
 		),
 	url('/images/hoffman.png');
 }
-#bar-name{
+#bar-name {
 	word-break: break-word;
 	font: 38px/1.4 'Bubbler One',Helvetica,Arial,sans-serif;;
 	text-transform: uppercase;
@@ -40,37 +40,37 @@ body, html{
 	margin-bottom: -5px;
 }
 
-#bar-subtitle{
+#bar-subtitle {
 	color: black;
 }
 
-#name-holder{
+#name-holder {
 	width: 100%;
 }
 
-#name-container{
+#name-container {
 	text-align: center;
 	margin: 0 auto;
 	padding: 5px;
 	width: 350px;
 }
 
-#name-container:hover #bar-name, #bar-name:hover{
+#name-container:hover #bar-name, #bar-name:hover {
 	color: black;
 }
 
-.bar-title{
+.bar-title {
 	color: #999;
 	font-style: italic;
 	transition: .3s;
 }
 
-.bar-link{
+.bar-link {
 	text-transform: uppercase;
 	color: black;
 }
 
-.bar-img img{
+.bar-img img {
 	max-height: 75px;
 	padding-top: 5px;
 }
@@ -79,35 +79,35 @@ a {
 	text-decoration: none;
 }
 
-a:-webkit-any-link{
+a:-webkit-any-link {
 	color: inherit;
 }
 
-#links-holder{
+#links-holder {
 	text-align: center;
 	line-height:22px;
 }
 
 
-.contact-img{
+.contact-img {
 	height: 30px;
 }
 
-.contact{
+.contact {
 	cursor: default;
 	font-size: 18px;
 }
 
-.contact-icon{
+.contact-icon {
 	display: inline-block;
 	padding: 5px;
 }
 
-.dark{
+.dark {
 	color: #4F4D4E;
 }
 
-.menu-item{
+.menu-item {
 	display: inline-block;
 	padding: 15px;
 	height: 120px;
@@ -121,22 +121,22 @@ a:-webkit-any-link{
 	-webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 	-moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
 	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+
+	&:hover {
+		background-color: rgba(252, 252, 252, 1);
+		box-shadow: 1px 1px 7px #888;
+	}
+
+	&.last {
+		margin: 0;
+	}
 }
 
-.menu-item.last{
-	margin: 0;
-}
-
-.menu-item:hover{
-	background-color: rgba(252, 252, 252, 1);
-	box-shadow: 1px 1px 7px #888;
-}
-
-.menu-item:hover .bar-title{
+.menu-item:hover .bar-title {
 	color: $main-red;
 }
 
-#subbar{
+#subbar {
 	margin: 10px 0 10px 0;
 	border-top: double #c0c0c0;
 	border-bottom: double #c0c0c0;
@@ -146,12 +146,12 @@ a:-webkit-any-link{
 	-webkit-padding-start: 0px;
 }
 
-.subbar-menu{
+.subbar-menu {
 	display: inline-block;
 	margin: 5px;
 }
 
-#display-subbar{
+#display-subbar {
 	display: none;
 	background: url('/images/more-menu.svg') no-repeat center;
 	background-size: 25px;
@@ -165,23 +165,23 @@ a:-webkit-any-link{
 	padding: 5px;
 }
 
-#display-subbar:hover{
+#display-subbar:hover {
 	cursor: pointer;
 }
 
-#side-contact{
+#side-contact {
 	float: right;
 	margin: -8px 0;
 	height: 0;
 }
 
-.contact{
+.contact {
 	color: $main-red;
 	font: 16px/2em 'Bubbler One', Helvetica;
 	font-weight: bold;
 }
 
-#bottom-contact{
+#bottom-contact {
 	display: none;
 	text-align: center;
 }
@@ -193,7 +193,7 @@ a:-webkit-any-link{
 	box-shadow: 1px 1px 7px #888;
 }
 
-.nonindex .menu-item{
+.nonindex .menu-item {
 	height: 80px;
 	padding: 5px;
 }
@@ -202,24 +202,24 @@ a:-webkit-any-link{
 	max-height: 50px;
 }
 
-.nonindex .bar-title{
+.nonindex .bar-title {
 	display: none;
 }
 
-.section-title{
+.section-title {
 	color: $main-red;
 	font: 45px/2em 'Bubbler One', Helvetica;
 	font-weight: bold;
 	display: block;
 }
 
-.item-title{
+.item-title {
 	color: #4F4D4E;
 	font-size: 25px;
 }
 
 
-.item-explanation{
+.item-explanation {
 	color: black;
 	padding: 10px;
 	padding: 0 0 10px 10px;
@@ -227,25 +227,25 @@ a:-webkit-any-link{
 }
 
 @media (max-width: 625px) {
-	#page{
+	#page {
 		padding: 0;
 		width: 100%;
 	}
 }
 
 @media (max-width: 455px) {
-	#side-contact{
+	#side-contact {
 		display: none;
 	}
 
-	#bottom-contact{
+	#bottom-contact {
 		display: block;
 	}
 
-	.menu-item{
+	.menu-item {
 		width: 120px;
 	}
-	.nonindex .menu-item{
+	.nonindex .menu-item {
 		height: 50px;
 		padding: 5px;
 	}
@@ -254,7 +254,7 @@ a:-webkit-any-link{
 		max-height: 25px;
 	}
 
-	.nonindex .bar-title{
+	.nonindex .bar-title {
 		display: none;
 	}
 }

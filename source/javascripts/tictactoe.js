@@ -80,6 +80,12 @@
 		 */
 		self.switchTurn = function() {
 			self.turn = (self.turn === 'X') ? 'O' : 'X';
+			self.setTurnValue();
+		}
+
+		self.setTurnValue = function() {
+			console.log(self.turn);
+			$('#ttt-turn').html(self.turn);
 		}
 
 		/**
@@ -196,6 +202,7 @@
 			self.resetObject(size);
 			self.resetValues();
 			self.rebuildDiagonals();
+			self.setTurnValue();
 		}
 
 		/**

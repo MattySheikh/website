@@ -11,6 +11,9 @@ bodyClass: nonindex
 	<div id="ttt-settings">
 		Board Size: <input type="text" id="ttt-size" value="3" size="2" max="10" min="3" maxlength="2" />
 		<input type="button" class="ttt-reset" value="Play &rarr;" />
+		<div id="ttt-turn-tracker">
+			<span id="ttt-turn"></span>'s turn
+		</div>
 	</div>
 	<table id="ttt-table">
 		<% (2.downto(0)).each do |i| %>

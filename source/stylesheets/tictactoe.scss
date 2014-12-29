@@ -4,7 +4,13 @@
 }
 
 #ttt-settings {
+	font-size: 25px;
 	margin: 15px;
+}
+
+#ttt-turn-tracker {
+	margin: 10px;
+	font-size: 20px;
 }
 
 #ttt-table {
@@ -32,6 +38,14 @@
 	}
 }
 
-#ttt-reset {
+.ttt-reset {
+	border: 1px solid $main-red;
+	transition: .3s;
+	border-radius: 5px;
+	background-color: rgba(252, 252, 252, 0.7);
 	margin-top: 10px;
+
+	&:hover {
+		background-color: white;
+	}
 }
