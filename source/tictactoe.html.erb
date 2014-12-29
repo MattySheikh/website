@@ -7,13 +7,20 @@ bodyClass: nonindex
 <%= javascript_include_tag 'tictactoe' %>
 <% end %>
 
-<table id="tic-tac-toe">
-	<% (2.downto(0)).each do |i| %>
-	<tr class="ttt-row" data-row="<%= i %>">
-		<% (0..2).each do |j| %>
-		<td class="ttt-square" data-column="<%= j %>" data-position='<%= "#{j}#{i}" %>'></td>
+<div id="ttt-container">
+	<div id="ttt-settings">
+		Board Size: <input type="text" id="ttt-size" value="3" size="2" max="10" min="3" maxlength="2" />
+		<input type="button" class="ttt-reset" value="Go" /> |
+		<input type="button" class="ttt-reset" value="Reset" />
+	</div>
+	<table id="ttt-table">
+		<% (2.downto(0)).each do |i| %>
+		<tr class="ttt-row">
+			<% (0..2).each do |j| %>
+			<td class="ttt-square" data-position='<%= "#{j}#{i}" %>'></td>
+			<% end %>
+		</tr>
 		<% end %>
-	</tr>
-	<% end %>
-</table>
-<input type="button" id="ttt-reset" value="Reset" />
+	</table>
+
+</div>
