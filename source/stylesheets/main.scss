@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import 'variables';
+
 body, html{
 	margin: 0px;
 	padding: 0px;
@@ -33,7 +35,7 @@ body, html{
 	word-break: break-word;
 	font: 38px/1.4 'Bubbler One',Helvetica,Arial,sans-serif;;
 	text-transform: uppercase;
-	color: #ba1820;
+	color: $main-red;
 	font-weight: bold;
 	margin-bottom: -5px;
 }
@@ -131,7 +133,7 @@ a:-webkit-any-link{
 }
 
 .menu-item:hover .bar-title{
-	color: #ba1820;
+	color: $main-red;
 }
 
 #subbar{
@@ -174,7 +176,7 @@ a:-webkit-any-link{
 }
 
 .contact{
-	color: #ba1820;
+	color: $main-red;
 	font: 16px/2em 'Bubbler One', Helvetica;
 	font-weight: bold;
 }
@@ -205,7 +207,7 @@ a:-webkit-any-link{
 }
 
 .section-title{
-	color: #ba1820;
+	color: $main-red;
 	font: 45px/2em 'Bubbler One', Helvetica;
 	font-weight: bold;
 	display: block;

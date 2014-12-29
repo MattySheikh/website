@@ -1,0 +1,19 @@
+---
+title: Tic Tac Toe
+bodyClass: nonindex
+---
+<% content_for :assets do %>
+<%= stylesheet_link_tag 'tictactoe' %>
+<%= javascript_include_tag 'tictactoe' %>
+<% end %>
+
+<table id="tic-tac-toe">
+	<% (2.downto(0)).each do |i| %>
+	<tr class="ttt-row" data-row="<%= i %>">
+		<% (0..2).each do |j| %>
+		<td class="ttt-square" data-column="<%= j %>" data-position='<%= "#{j}#{i}" %>'></td>
+		<% end %>
+	</tr>
+	<% end %>
+</table>
+<input type="button" id="ttt-reset" value="Reset" />
