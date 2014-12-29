@@ -2,19 +2,22 @@
 (function (document) {
 	var $d = $(document),
 		size = 3,
-		map,
 		minTurnsForWinner = (size * 2) - 1, // there can't be a winner in less than (n * 2) - 1 moves
 		maxTurns = Math.pow(size, 2), // only n^2 possible turns
 		winningValue = size,
+		values = {'X': 1, 'O': -1}, // Keep track of the turn values to change the mapped values
 		forwardDiagonal = [], // diagonal that looks like /
 		backwardDiagonal = [], // diagonal that looks like \
+		// We're going to keep track of the values of diagonals, columns, and rows, in order to determine a winner.
+		// If any of the values are of value {size}, then the current turn has won
+		// This gives us O(1) time of checking for a winner
+		// These are initially set in TicTacToe.resetBoard()
 		forwardDiagonalValue,
 		backwardDiagonalValue,
-		values = {'X': 1, 'O': -1};
+		map;
 
-	// We want to generate the diagonal values
+	// We want to generate the diagonal values using the size of the board instead of hard-coding them
 	for (var i = 0; i < size; i++) {
-
 		// The forwardDiagonal values' X and Y coordinates will always be the same
 		forwardDiagonal.push(String(i) + String(i));
 
@@ -30,12 +33,26 @@
 			var $this = $(this),
 				position = String($this.data('position')),
 				row = position[0],
-				column = position[1],
-				value = values[self.turn];
+				column = position[1];
 
 			$this.html(self.turn);
 			$this.addClass('marked');
 			self.numTurns++;
+			self.incrementValues(position, row, column);
+
+			if (self.numTurns >= minTurnsForWinner && self.checkForWinner(row, column)) {
+				alert(self.turn + ' has won!');
+				$('.ttt-square').addClass('marked') // No more turns for you
+				return;
+			}
+
+			self.switchTurn();
+		}
+
+		self.incrementValues = function(position) {
+			var row = position[0],
+				column = position[1],
+				value = values[self.turn];
 
 			if (self.inDiagonal(position, forwardDiagonal)) {
 				forwardDiagonalValue += value;
@@ -55,13 +72,6 @@
 
 			map.rows[row] += value;
 			map.columns[column] += value;
-
-			if (self.numTurns >= minTurnsForWinner && self.checkForWinner(row, column)) {
-				alert(self.turn + ' has won!');
-				return;
-			}
-
-			self.switchTurn();
 		}
 
 		self.switchTurn = function() {
