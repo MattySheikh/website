@@ -14,13 +14,12 @@
 }
 
 #ttt-table {
-	max-width: 100px;
 	margin: 0 auto;
 	text-align: center;
 }
 .ttt-square {
-	height: 100px;
-	min-width: 100px;
+	height: 50px;
+	min-width: 50px;
 	font-size: 72px;
 	color: $main-red;
 	cursor: pointer;
