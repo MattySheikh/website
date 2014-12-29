@@ -194,6 +194,8 @@
 			var size = +$('#ttt-size').val() || 3;
 			$('.ttt-square').html('').removeClass('marked');
 			self.resetObject(size);
+			self.resetValues();
+			self.rebuildDiagonals();
 		}
 
 		/**
