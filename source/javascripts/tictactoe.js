@@ -83,8 +83,10 @@
 			self.setTurnValue();
 		}
 
+		/**
+		 * Update the turn tracker to display the current player's turn
+		 */
 		self.setTurnValue = function() {
-			console.log(self.turn);
 			$('#ttt-turn').html(self.turn);
 		}
 
@@ -106,11 +108,7 @@
 			// We only care about the absolute biggest value because that will be closest to the winning value
 			var maxValue = Math.max(Math.abs(self.map.rows[row]), Math.abs(self.map.columns[column]), Math.abs(self.forwardDiagonalValue), Math.abs(self.backwardDiagonalValue));
 
-			if (maxValue === self.winningValue) {
-				return true;
-			}
-
-			return false;
+			return maxValue === self.winningValue;
 		}
 
 		/**
