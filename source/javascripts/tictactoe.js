@@ -1,5 +1,8 @@
 (function (document) {
 	'use strict';
+	/**
+	 * The following are more constant-level variables that don't really have a bearing on the game itself
+	 */
 	var $d = $(document),
 		size = 3,
 		minTurnsForWinner = (size * 2) - 1, // there can't be a winner in less than (n * 2) - 1 moves
@@ -26,6 +29,9 @@
 		backwardDiagonal.push(String(i) + String(size - (i + 1)));
 	}
 
+	/**
+	 * TicTacToe is the main object that will keep the state of the current game
+	 */
 	var TicTacToe = function() {
 		var self = this;
 
