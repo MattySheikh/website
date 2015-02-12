@@ -1,0 +1,25 @@
+---
+title: Wow What A Designer
+bodyClass: nonindex
+---
+<% content_for :assets do %>
+<%= stylesheet_link_tag 'experiments' %>
+<%= javascript_include_tag 'experiments' %>
+<%= stylesheet_link_tag 'tictactoe' %>
+<%= javascript_include_tag 'tictactoe' %>
+<% end %>
+
+<div id= "experiments-content">
+	<div class="experiment">
+		<div class="experiment-title">
+			Phil
+		</div>
+		<%= image_tag "phil.png", :title => "Phil" %>
+	</div>
+	<div class="experiment">
+		<div class="experiment-title">
+			Brett
+		</div>
+		<%= image_tag "brett.png", :title => "Phil" %>
+	</div>
+</div>
