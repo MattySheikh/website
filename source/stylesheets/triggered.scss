@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import 'variables';
+
+#triggered-header {
+	font-size: 80px;
+	color: black;
+}
+
+#triggered-status {
+	font: 400px/1 'Bubbler One',Helvetica,Arial,sans-serif;
+	color: $main-red;
+    font-weight: bold;
+    text-transform: uppercase;
+}

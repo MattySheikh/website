@@ -31,6 +31,18 @@ body, html {
 		),
 	url('/images/hoffman.png');
 }
+
+#footer {
+	text-align: center;
+}
+
+#footer-trigger {
+	margin: 0 auto;
+	padding: 5px;
+	cursor: pointer;
+	width: 30px;
+}
+
 #bar-name {
 	word-break: break-word;
 	font: 38px/1.4 'Bubbler One',Helvetica,Arial,sans-serif;;
