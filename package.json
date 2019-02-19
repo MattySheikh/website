@@ -1,0 +1,40 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MattySheikh/website.git",
+  "author": "Matthew Al-Sheikh <matthewalsheikh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "fork-ts-checker-webpack-plugin": "^0.5.2",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.1.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "ts-loader": "^5.3.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  },
+  "scripts": {
+    "watch": "webpack-dev-server --config webpack.dev.js --hot --inline --colors --mode development --open",
+    "build": "webpack --profile --progress --display-error-details --color --config webpack.prod.js"
+  },
+  "dependencies": {
+    "stylelint": "8.0.0"
+  }
+}

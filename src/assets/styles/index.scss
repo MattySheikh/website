@@ -1,0 +1,34 @@
+@import './partials/colors';
+@import './partials/variables';
+
+* {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+}
+
+body {
+	background-color: $bg-white;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.rounded-edges {
+	border-radius: 10%;
+}
+
+.push-bottom {
+	margin-bottom: $standard-margin;
+}
+
+.mini-icon {
+	width: 32px;
+}
+
+.icon-link-container {
+	margin: 0 8px;
+}
