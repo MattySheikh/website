@@ -14,7 +14,7 @@ module.exports = merge(common, {
 	entry: './index.tsx',
 	devtool: 'cheap-module-eval-source-map',
 	output: {
-		filename: 'bundle.js',
+		filename: 'main.js',
 		publicPath: '/',
 		path: __dirname + '/dist/build/'
 	},

@@ -18,17 +18,17 @@ export class Main extends React.Component {
 				</div>
 				<div className="flex-center">
 					<div className="icon-link-container">
-						<a href="https://github.com/MattySheikh" title="GitHub">
+						<a target="_blank" href="https://github.com/MattySheikh" title="GitHub">
 							<img className="mini-icon" src={'./assets/images/github.png'} alt="GitHub" />
 						</a>
 					</div>
 					<div className="icon-link-container">
-						<a href="https://www.linkedin.com/in/malsheikh" title="LinkedIn">
+						<a target="_blank" href="https://www.linkedin.com/in/malsheikh" title="LinkedIn">
 							<img className="mini-icon" src={'./assets/images/linkedin.png'} alt="LinkedIn" />
 						</a>
 					</div>
 					<div className="icon-link-container">
-						<a href="./assets/images/resume.pdf" title="LinkedIn">
+						<a target="_blank" href="./assets/images/resume.pdf" title="LinkedIn">
 							<img className="mini-icon" src={'./assets/images/resume-icon.png'} alt="LinkedIn" />
 						</a>
 					</div>
