@@ -15,7 +15,7 @@ module.exports = merge(common, {
 	devtool: 'cheap-module-eval-source-map',
 	output: {
 		filename: 'bundle.js',
-		publicPath: '/build/',
+		publicPath: '/',
 		path: __dirname + '/dist/build/'
 	},
 	devServer: {

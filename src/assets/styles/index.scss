@@ -4,6 +4,12 @@
 * {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 14px;
+
+	/* Reset */
+	margin: 0;
+	&::before, &::after {
+		box-sizing: border-box;
+	}
 }
 
 body {
