@@ -29,7 +29,7 @@ export class Main extends React.Component {
 					</div>
 					<div className="icon-link-container">
 						<a href="./assets/images/resume.pdf" title="LinkedIn">
-							<img className="mini-icon" src={'./assets/images/linkedin.png'} alt="LinkedIn" />
+							<img className="mini-icon" src={'./assets/images/resume-icon.png'} alt="LinkedIn" />
 						</a>
 					</div>
 				</div>
