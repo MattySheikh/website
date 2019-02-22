@@ -5,20 +5,6 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // TODO - exclude node_modules in css loader
 module.exports = {
-	output: {
-		publicPath: '/admin/static/'
-	},
-	optimization: {
-		splitChunks: {
-			cacheGroups: {
-				commons: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendor',
-					chunks: 'all'
-				}
-			}
-		}
-	},
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js', '.json', '.scss', '.css'],
 		plugins: [
@@ -32,8 +18,7 @@ module.exports = {
 	plugins: [
 		new ForkTsCheckerWebpackPlugin(),
 		new StyleLintPlugin({
-			files: './assets/styles/**/*.s?(a|c)ss',
-			configFile: 'stylelint.json'
+			files: './assets/styles/**/*.s?(a|c)ss'
 		})
 	]
 };
