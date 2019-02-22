@@ -1,2 +1,1 @@
-TODO: Move to SASS
-Just buildin' my site and stuff. Attempting to code in Ruby, so there's that.
+[Click here for my very complex personal website](www.matthewalsheikh.com)
